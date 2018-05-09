@@ -68,6 +68,7 @@ window.onload = function(){
 					 'building_01',
 					 'building_01_piles',
 					 'jetty',
+					 'bridge',
 					 'camera',
 					 'camera_origin'
 					 ];
