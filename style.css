@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+body {margin:0;
+	font-family: 'Source Sans Pro', 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif
+}
+
+/* サイト名 */
+.site a {color: #000000;
+	font-size: 30px;
+	/*font-family: 'Paytone One', sans-serif;*/
+	font-family: 'Pattaya', sans-serif;
+	text-decoration: none
+}
+
+/* ナビゲーションメニュー */
+.menu ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.menu li a {
+	display: block;
+	padding: 15px;
+	color: #000000;
+	font-size: 14px;
+	text-decoration: none
+}
+
+.menu li a:hover {
+	background-color: #eeeeee
+}
+
+/* WebGL */
+.webgl {
+	width: 100%;
+	height: auto;
+}
+
+/* キャッチコピー */
+.catch {
+	padding: 0px 15px;
+	/*background-color: rgba(255, 255, 255, 0.5);*/
+	color: rgba(255, 100, 0, 0.6);
+	font-family: 'Lakki Reddy', sans-serif;
+	font-size: 60px
+}
+
+/* お知らせ */
+.news {
+	padding: 20px;
+	border: solid 6px #dddddd;
+	margin-bottom: 10px
+}
+
+.news h2 {
+	margin-top: 0;
+	margin-bottom: 5px;
+	font-size:18px;
+	color: #666666
+}
+
+.news ul {
+	margin: 0;
+	padding: 0;
+	list-style:none
+}
+
+.news li a {
+	display: block;
+	padding:5px;
+	border-bottom: dotted 2px #dddddd;
+	color: #000000;
+	font-size: 14px;
+	text-decoration: none
+}
+
+.news li a:hover {background-color: #eeeeee}
+
+.service_title {
+	font-size: 24px
+}
+
+.services {
+	margin-bottom: 20px
+}
+
+.service a {
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none
+}
+
+.service h2 {
+	margin: 0;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: normal
+}
+
+.service p {
+	margin: 0;
+	padding: 15px 5px;
+	font-size: 12px;
+	text-align: left
+}
+
+.services .service:nth-child(1) h2 {background-color: #004f83}
+.services .service:nth-child(1) p {background-color: #0084a8}
+.services .service:nth-child(2) h2 {background-color: #920000}
+.services .service:nth-child(2) p {background-color: #c73333}
+.services .service:nth-child(3) h2 {background-color: #175f00}
+.services .service:nth-child(3) p {background-color: #2f821b}
+.services .service:nth-child(4) h2 {background-color: #cc9100}
+.services .service:nth-child(4) p {background-color: #e5ac15}
+
+/* コピーライト */
+.copyright {
+	margin: 0;
+	color: #666666;
+	font-size: 14px
+}
+/* グリッド */
+body {
+	display: grid;
+	grid-template-columns:
+	[left] minmax(20px, 1fr) [main] minmax(auto, 900px) [main-end] minmax(20px, 1fr) [right];
+	grid-template-rows:
+	[head] auto [img] auto [news] auto [service_title] auto [service] auto [foot] auto [bottom]
+}
+
+.hbar {
+	grid-column-start: left;
+	grid-column-end: right;
+	grid-row-start: head;
+	z-index: -1;
+	border-bottom: solid 4px #dddddd
+}
+.site {
+	grid-column-start: main;
+	grid-row-start: head
+}
+
+.menu {
+	grid-column-start: main;
+	grid-row-start: head;
+	justify-self: end;
+	align-self: center
+}
+.webgl {
+	grid-column-start: main;
+	grid-row-start: img
+}
+
+.catch {
+	grid-column-start: main;
+	grid-row-start: img;
+	justify-self: center;
+	align-self: center;
+	z-index: 100
+}
+
+.news {
+	grid-column-start: main;
+	grid-row-start: news
+}
+
+.service_title {
+	grid-column-start: main;
+	grid-row-start: service_title;
+	justify-self: center
+}
+
+.services {
+	grid-column-start: main;
+	grid-row-start: service;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: main;
+	grid-column-gap: 10px
+}
+
+.contents {
+	grid-column-start: main;
+	grid-row-start: news
+}
+
+.copyright {
+	grid-column-start: main;
+	grid-row-start: foot;
+	justify-self: center
+}
+
+.debugger {
+	grid-column-start: main;
+	grid-row-start: foot;
+}
