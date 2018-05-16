@@ -69,10 +69,11 @@ window.onload = function(){
 					 'building_01_piles',
 					 'jetty',
 					 'bridge',
-					 'cube_house_01',
-					 'cube_house_02',
-					 'cube_house_03',
-					 'cube_house_04',
+					 'cube_house',
+					 //'cube_house_01',
+					 //'cube_house_02',
+					 //'cube_house_03',
+					 //'cube_house_04',
 					 
 					 'camera',
 					 'camera_origin'
