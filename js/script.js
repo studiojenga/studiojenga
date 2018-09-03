@@ -22,7 +22,7 @@ window.onload = function(){
 
 	let camMode = 0;
     // webglコンテキストを取得
-	let gl = c.getContext('webgl');
+	let gl = c.getContext('webgl') || c.getContext('experimental-webgl');
 
     // 頂点シェーダとフラグメントシェーダの生成
     let v_shader = create_shader('vs');
