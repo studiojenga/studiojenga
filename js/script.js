@@ -71,6 +71,7 @@ window.onload = function(){
 					 'bridge',
 					 'cube_house',
 					 'tree',
+					 'tower',
 					 //'cube_house_01',
 					 //'cube_house_02',
 					 //'cube_house_03',
